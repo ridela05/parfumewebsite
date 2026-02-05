@@ -1,0 +1,9 @@
+.cta{background:linear-gradient(90deg,var(--brown-700),var(--brown-500));padding:26px;border-radius:12px;color:white;display:flex;justify-content:space-between;align-items:center;margin:30px 0;box-shadow: 0 6px 20px rgba(0,0,0,0.06)}
+.cta .cta-inner{display:flex;align-items:center;gap:18px}
+.cta-visual .cta-icon-wrapper{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));display:flex;align-items:center;justify-content:center;position:relative;flex:0 0 auto}
+.cta-icon{font-size:36px;color:var(--muted)}
+.icon-glow{position:absolute;inset:0;border-radius:50%;box-shadow:0 10px 30px rgba(178,106,59,0.28)}
+.cta-text h2{margin:0;font-size:1.2rem}
+.cta .btn{background:white;color:var(--brown-900);padding:12px 20px;border-radius:10px;text-decoration:none;display:inline-flex;gap:10px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .12s ease,box-shadow .12s ease}
+.cta .btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,0.12)}
+.cta .btn svg{width:18px;height:18px}

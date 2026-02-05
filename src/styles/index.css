@@ -1,0 +1,72 @@
+:root{
+  --brown-900: #3e2a1f;
+  --brown-700: #6b4b3b;
+  --brown-500: #a77a5b;
+  --brown-300: #d8b8a1;
+  --accent: #b2693b;
+  --muted: #f5efe9;
+  --max-width: 1100px;
+  --radius: 8px;
+}
+
+*{box-sizing: border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--muted);
+  color: var(--brown-900);
+}
+.app{display:flex;flex-direction:column;min-height:100vh}
+main{width:90%;max-width:var(--max-width);margin:0 auto;padding:40px 0}
+
+/* Hero */
+.hero{background: linear-gradient(135deg, var(--brown-300), var(--brown-500));padding:80px 16px;border-radius:12px;color:var(--brown-900);margin:24px auto;max-width:var(--max-width);display:flex;align-items:center;justify-content:space-between}
+.hero .left{max-width:55%}
+.hero h1{font-size:2.6rem;margin:0 0 12px}
+.hero p{margin:0 0 20px;opacity:0.95}
+.hero .right img{box-shadow:0 10px 30px rgba(62,42,31,0.12)}
+.btn{background:var(--brown-900);color:var(--muted);padding:12px 18px;border-radius:6px;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+
+/* Why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:40px 0}
+.card{background:white;padding:18px;border-radius:8px;box-shadow:0 2px 0 rgba(0,0,0,0.04)}
+.card h3{margin:0 0 8px}
+
+/* Product List */
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin:30px 0}
+.product{background:white;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:12px;position:relative;border:1px solid rgba(123,63,26,0.08);box-shadow:0 8px 28px rgba(16,24,40,0.06);transition:transform .14s ease,box-shadow .14s ease}
+.product:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(16,24,40,0.12)}
+.product img{width:100%;height:260px;object-fit:cover;border-radius:10px}
+.no-image{width:100%;height:260px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:linear-gradient(135deg,var(--brown-300),var(--brown-500));color:var(--brown-900);font-weight:700}
+.badge{position:absolute;top:12px;right:12px;background:linear-gradient(90deg,var(--accent),#f2a841);color:white;padding:6px 12px;border-radius:20px;font-weight:700;font-size:0.82rem;z-index:3;display:inline-flex;gap:8px;align-items:center}
+.price{font-weight:800;color:var(--brown-700);font-size:1.05rem}
+.product .actions{margin-top:auto;display:flex;gap:8px}
+
+/* helper for small uppercase category */
+.category{font-size:0.72rem;letter-spacing:0.8px;color:var(--brown-700);text-transform:uppercase;font-weight:700}
+
+.products-header{text-align:center;margin-top:8px}
+.products-header .star{font-size:1.4rem;color:var(--accent);margin-bottom:6px}
+.products-header h2{margin:0 0 12px 0;font-size:1.6rem}
+
+
+/* CTA */
+.cta{background:linear-gradient(90deg,var(--brown-700),var(--brown-500));padding:28px;border-radius:10px;color:white;display:flex;justify-content:space-between;align-items:center;margin:30px 0}
+.cta .cta-inner{max-width:70%}
+
+/* Buttons */
+.btn.btn-outline{background:transparent;color:var(--brown-900);border:1px solid rgba(0,0,0,0.06);padding:10px 14px;border-radius:8px}
+.btn{transition:transform .12s ease,box-shadow .12s ease}
+.btn:hover{transform:translateY(-3px)}
+
+/* Social proof */
+.socials{display:flex;gap:12px;flex-wrap:wrap}
+.testimonial{background:white;padding:12px;border-radius:8px;min-width:220px}
+
+footer{padding:18px;text-align:center;color:var(--brown-700);opacity:0.9}
+
+@media (max-width:800px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .hero .left{max-width:100%}
+}

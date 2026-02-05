@@ -1,0 +1,32 @@
+.social-proof{margin-top:24px;padding:12px 8px}
+.social-proof-header h2{margin:0 0 6px 0;font-size:1.25rem}
+.sub{margin:0;color:#666;font-size:0.95rem}
+.carousel-wrap{position:relative;margin-top:12px}
+.socials-carousel{display:flex;gap:16px;overflow-x:auto;padding:12px 8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
+.socials-carousel:focus{outline:2px solid rgba(99,102,241,0.25)}
+.card{min-width:260px;flex:0 0 auto;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 6px 18px rgba(16,24,40,0.08);scroll-snap-align:start}
+.card .quote{margin:8px 0 10px 0;font-size:0.98rem;color:#111}
+.card .author{font-size:0.86rem;color:#555}
+.stars{display:flex;gap:6px}
+.nav{position:absolute;top:50%;transform:translateY(-50%);border:none;background:rgba(0,0,0,0.6);color:#fff;width:34px;height:34px;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.nav:hover{background:rgba(0,0,0,0.8)}
+.nav.prev{left:6px}
+.nav.next{right:6px}
+.note{color:#666;font-size:0.85rem;margin-top:10px}
+
+.dots{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.dot{width:10px;height:10px;border-radius:999px;background:rgba(0,0,0,0.16);border:none;cursor:pointer;padding:0}
+.dot.active{background:#111;transform:scale(1.12)}
+
+/* hide default scrollbar but keep scrolling available */
+.socials-carousel::-webkit-scrollbar{height:8px}
+.socials-carousel::-webkit-scrollbar-track{background:transparent}
+.socials-carousel::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.12);border-radius:999px}
+
+.carousel-wrap:hover .nav{opacity:1}
+.nav{opacity:0.9;transition:opacity .18s}
+
+@media (max-width:520px){
+  .nav{display:none}
+  .card{min-width:220px}
+}

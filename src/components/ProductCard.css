@@ -1,0 +1,17 @@
+.product{overflow:hidden}
+.product .fav{position:absolute;top:12px;left:12px;background:white;border-radius:999px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:none;box-shadow:0 6px 18px rgba(16,24,40,0.06);cursor:pointer;color:var(--brown-700)}
+.product .fav svg{width:16px;height:16px}
+
+.product .body{display:flex;flex-direction:column;gap:8px}
+.product .body h3{margin:0;font-size:1.1rem}
+.product .category{font-size:0.72rem;letter-spacing:0.8px;color:var(--brown-700);text-transform:uppercase;font-weight:700}
+.product .desc{opacity:0.95;color:var(--brown-900);font-size:0.95rem;line-height:1.45;/* show full paragraph from Contentful */}
+
+.product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.btn.buy{background:linear-gradient(90deg,#7b3f1a,#c66f2b);color:#fff;padding:10px 14px;border-radius:10px;box-shadow:0 8px 22px rgba(198,111,43,0.12);display:inline-flex;gap:8px;align-items:center;font-weight:700}
+.btn.buy svg{width:16px;height:16px;color:inherit}
+
+@media (max-width:720px){
+  .product img{height:220px}
+  .products{gap:18px}
+}
